@@ -55,7 +55,7 @@ const Home=()=>{
         <h1><i class="fa-solid fa-user"></i>About Me</h1>
          <ol>
             <div className='profile'>
-            <img src="./profile.jpg" className="Profile"></img></div>
+            <img src="./Profile.jpg" className="Profile"></img></div>
             <li data-aos="slide-right">Hii, I m Priyanshu Ptawal</li>
             <li data-aos="slide-right">I am Web Developer</li>
             <li data-aos="slide-right">I am pursuing Bachelor's of Technology in Computer Science</li>
