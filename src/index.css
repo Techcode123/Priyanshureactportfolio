@@ -1,0 +1,82 @@
+html{
+  font-size:62.5%;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+h1{
+  font-weight: bold;
+  font-size: 3rem;
+  font-style: italic;
+  color:white;
+}
+.main_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  height: 100vh;
+}
+.center_div{
+  display: flex;
+  background-color:plum;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vh;
+  text-align: center;
+  overflow: scroll;
+  border-radius: 2rem;
+}
+.btn{
+  width:15rem;
+  margin-left: 8rem;
+  font-weight: bold;
+  font-style: italic;
+}
+.btn:hover{
+  cursor:pointer;
+}
+.btnn:hover{
+  cursor:pointer;
+}
+input{
+  width:32rem;
+  height:2rem;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 0.4rem;
+  border: none;
+}
+.btnn{
+  color:white;
+  background-color: red;
+  border:2px solid red;
+  border-radius:0.2rem;
+  position: relative;
+  top:2rem;
+  left:20rem;
+}
+li{
+  font-style: italic;
+  font-size: 2rem;
+}
+ol{
+  position: relative;
+  top:3rem;
+  right:18rem;
+  width:3rem;
+  left:10rem;
+}
+@media (min-width:300px )and (max-width:400px){
+  html{
+    font-size:45%;
+  }
+}
+@media (min-width:0px )and (max-width:295px){
+  html{
+    font-size:35%;
+  }
+}

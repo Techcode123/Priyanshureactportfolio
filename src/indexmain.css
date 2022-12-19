@@ -1,0 +1,1212 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    /* border: 2px solid black; */
+}
+#root{
+    width: 100%;
+}
+/* body{width: 100%;} */
+.parent{
+    background-color: white;
+    /* scroll-behavior: smooth;
+    overflow: scroll; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width: 100vw;
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    height: 6rem;
+    top:0rem;
+    z-index: 1;
+}
+.Listnavbar{
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+.List{
+    list-style-type: none;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+    position: relative;
+}
+.List::after{
+    content:" ";
+    background-color:white;
+    position: absolute;
+    width:0%;
+    height: 0.2rem;
+    left:2rem;
+    top:1.7rem;
+}
+.List:hover::after{
+    transition: width 0.3s linear;
+    width:72%;
+}
+/* .Listnavbar li:nth-child(1)::after{
+    content:" ";
+    background-color:white;
+    position: absolute;
+    width:72%;
+    height: 0.2rem;
+    left:2rem;
+    top:1.7rem;
+} */
+a{
+    margin: 0 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+.portifolio{
+    margin-left: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color:white;
+}
+section{
+    width: 100%;
+}
+.Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    position: absolute;
+    width:100%;
+    height: 60rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.Section ol{
+    margin-left: 6rem;
+}
+.Section ol li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ListSection{
+    font-size: 3rem;
+    list-style-type: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color:darkorange
+}
+.ListSectionB{
+    font-size: 6rem;
+    list-style-type: none;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color:rgb(11, 241, 165)
+}
+.ListSectionC{
+    list-style-type: none;
+    font-weight: bold;
+    display: flex;
+    margin-bottom:2rem;
+}
+.ListSectionC span:nth-child(1){
+    font-size: 3rem;
+    margin-right:1rem;
+    color: blue;
+}
+.ListSectionC span:nth-child(2){
+    font-size: 2rem;
+    color: red;
+}
+.aboutbtn{
+    list-style-type: none;
+    background-color: red;
+    font-size: 2rem;
+    width:13rem;
+    height: 3rem;
+    border-radius: 2rem;
+}
+.aboutbtn a{
+    color: white;
+}
+.photo{
+    width:15rem;
+    height:15rem;
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 25rem;
+}
+
+#About{
+    font-size:3rem;
+    position: relative;
+    top: 73rem;
+    padding-top: 3rem;
+    background-color: #F5FFFA;
+}
+#About h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 5rem;
+    color:lightseagreen;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#About h1 i{
+    position: relative;
+    right: 2rem;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+}
+#About ol img{
+    width: 30rem;
+    height:30rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+#About ol li{
+    margin-left: 3rem;
+    list-style-type: disc;
+}
+#About ol li span{
+    color:blue;
+    margin-left: 0rem;
+    list-style-type: disc;
+}
+#Skills{
+    position: relative;
+    top: 73.1rem;
+    background-color:#F0FFFF;
+    padding-top: 3rem;
+}
+#Skills h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size:3rem;
+    margin-bottom: 5rem;
+    color:rgb(10, 147, 233);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#Skills h1 i{
+    position: relative;
+    right:2rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    grid-template-rows: 20rem 20rem 20rem 20rem 20rem;
+    justify-content:space-around;
+}
+.grid div{
+    font-size: 3rem;
+    border: 2px solid black;
+    margin-bottom: 5rem;
+    text-align: center;
+    border-radius: 2rem;
+    height:18rem;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.grid div img{
+    width:13rem;
+    height:10rem;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 13rem;
+    margin-bottom: 2rem;
+}
+#Education{
+    position: relative;
+    top: 72.8rem;
+    background-color: #F0F8FF;
+    padding-top: 3rem;
+}
+#Education h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size:3rem;
+    margin-bottom: 5rem;
+    color:rgb(153, 5, 227);
+    font-weight:bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#Education h1 i{
+    position: relative;
+    right:2rem;
+}
+#Education .flexbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Education .flexbox div{
+    width: 71.3rem;
+    height:70rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+#Education .flexbox div:nth-child(3) img{
+   width:71.3rem
+}
+h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+h2,h3,h4{
+    text-align: center;
+    line-height: 2rem;
+}
+#Education ol{
+    list-style-type: none;
+    position: relative;
+    left: 15rem;
+    margin-top: 4rem;
+    width: 60rem;
+}
+#Education ol li:nth-child(1){
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: rgb(28, 28, 196);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Education ol li:nth-child(2){
+    font-size: 3rem;
+    position: relative;
+    right:14rem;
+    margin-bottom: 1rem;
+    width: 70rem;
+}
+#Education ol li:nth-child(3){
+    font-size: 3rem;
+    position: relative;
+    margin-left: 3rem;
+    color: red;
+}
+.MDU li:nth-child(1){
+    font-size: 4rem;
+    position: relative;
+    right:5rem;
+    margin-bottom: 1rem;
+    width:60rem;
+}
+.MDU li:nth-child(2){
+    font-size: 3rem;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    width:60rem;
+}
+.MDU li:nth-child(3){
+    position: relative;
+    left: 2rem;
+    width:40rem;
+}
+.flexbox div{
+    overflow-x: hidden;
+}
+#Contact{
+    position: relative;
+    top:72.8rem;
+    background-color:rgb(230, 230, 250);
+    padding-top: 3rem;
+}
+#Contact h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size:3rem;
+    margin-bottom: 5rem;
+    color:rgb(54, 52, 52);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#Contact .flexbox{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+#Contact .flexbox{
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-rows:auto;
+}
+#Contact .flexbox div input{
+   width: 28rem;
+   height: 3rem;
+}
+input:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+}
+textarea:hover{
+   cursor: pointer;
+}
+#Contact .flexbox input,textarea{
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border-color: black;
+}
+#Contact .flexbox input[type='reset']{
+    margin-left: 20rem;
+    width:8rem;
+    background-color: darkmagenta;
+    color: white;
+}
+#Contact .flexbox input::placeholder,textarea::placeholder{
+    color: black;
+}
+.First{
+    position: relative;
+    left: 1.5rem;
+    bottom:0.1rem;
+}
+.Second{
+    position: relative;
+    left: 1.5rem;
+    bottom:0.1rem;
+}
+.Third{
+    position: relative;
+    left: 1.5rem;
+    bottom:0.1rem;
+}
+.Fourth{
+    position: relative;
+    left: 1.5rem;
+    bottom:16rem;
+}
+.Fourth textarea{
+    margin-left: 3rem;
+}
+.Fifth{
+    position: relative;
+    left: 22rem;
+    color: white;
+}
+input{
+  padding-left: 1.6rem;
+  background-color: rgb(230, 230, 250);
+  border: 2px solid black;
+}
+textarea{
+    padding-left: 1.6rem;
+    margin-left: 0rem;
+    background-color: rgb(230, 230, 250);
+    width:28rem;
+}
+/* #contact .flexbox input:nth-child(1),input:nth-child(2),input:nth-child(3),textarea{
+    padding-left: 5rem;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    position: relative;
+    top:72.9rem;
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+}
+#footer *{
+    line-height: 3rem;
+    list-style-type: none;
+}
+#footer li{
+    margin-left: 2.8rem;
+}
+#footer h1{
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#footer p{
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#footer div{
+    margin-left: 3rem;
+    border-top: 2px solid rgb(54, 52, 52);
+    font-size: 1.3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ol{
+    position: relative;
+    right: 3.5rem;
+}
+.ol a:hover{
+    color: blue;
+    cursor: pointer;
+}
+@media (max-width:1024px){
+    .List{
+        list-style-type: none;
+        margin-top: 0.5rem;
+        margin-right: 0.1rem;
+        position: relative;
+    }
+}
+@media (max-width:826px){
+    .grid{
+        display: grid;
+        grid-template-columns: 30rem 30rem;
+        grid-template-rows: 20rem 20rem 20rem 20rem 20rem;
+        justify-content:space-around;
+    }
+    .grid div{
+        font-size: 3rem;
+        border: 2px solid black;
+        margin-bottom: 5rem;
+        text-align: center;
+        border-radius: 2rem;
+        height:18rem;
+        background-color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    .grid div img{
+        width:13rem;
+        height:10rem;
+        display: block;
+        margin-top: 2rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    #Education .flexbox div{
+        width: 55rem;
+        height:52rem;
+        margin-bottom: 2rem;
+        background-color: white;
+    }
+    #Education .flexbox div:nth-child(1) img{
+        width:55rem
+     }
+     #Education .flexbox div:nth-child(2) img{
+        width:55rem
+     }
+    #Education .flexbox div:nth-child(3) img{
+        width:55rem
+     }
+    #Education ol li:nth-child(1){
+        font-size: 2.8rem;
+    }
+    #Education ol li:nth-child(2){
+        font-size: 1.8rem;
+        margin-left: 7rem;
+    }
+    #Education ol li:nth-child(3){
+        font-size: 1.8rem;
+    }
+    .ListSection{
+        font-size: 2rem;
+        list-style-type: none;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .ListSectionB{
+        font-size: 3rem;
+        list-style-type: none;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    .ListSectionC span:nth-child(1){
+        font-size: 2rem;
+        margin-right:1rem;
+    }
+    .ListSectionC span:nth-child(2){
+        font-size: 1.4rem;
+        color: red;
+    }
+    .aboutbtn{
+        list-style-type: none;
+        background-color: red;
+        font-size: 1rem;
+        width:12.9rem;
+        height: 2.2rem;
+        border-radius: 2rem;
+        padding-top:0.2rem;
+    }
+    #About ol li{
+        list-style-type: disc;
+        margin-left: 3rem;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    #About ol img{
+        width: 20rem;
+        height:20rem;
+    }
+}
+@media (max-width:625px){
+    #Home h1,#About h1,#Education h1,#Contact h1,#Skills h1{
+        font-size: 2rem;
+
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 20rem 20rem;
+        grid-template-rows: 17rem 17rem 17rem 17rem 17rem;
+        justify-content:space-around;
+    }
+    .grid div{
+        font-size: 2rem;
+        border: 2px solid black;
+        margin-bottom: 5rem;
+        text-align: center;
+        border-radius: 2rem;
+        height:15rem;
+        background-color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    .grid div img{
+        width:10rem;
+        height:7rem;
+        display: block;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+    #Education .flexbox div{
+        width: 40rem;
+        height:37rem;
+        margin-bottom: 2rem;
+        background-color: white;
+    }
+    #Education .flexbox div:nth-child(1) img{
+        width:40rem
+     }
+     #Education .flexbox div:nth-child(2) img{
+        width:40rem
+     }
+    #Education .flexbox div:nth-child(3) img{
+        width:40rem
+     }
+    #Education ol li:nth-child(1){
+        font-size: 2rem;
+        position: relative;
+        right: 14rem;
+    }
+    #Education ol li:nth-child(2){
+        font-size: 1.1rem;
+        position: relative;
+        right:21rem;
+
+    }
+    #Education ol li:nth-child(3){
+        font-size: 1.1rem;
+        position: relative;
+        margin-left: 0rem;
+        right: 0rem;
+    }
+    #Education ol{
+        margin-top: 1rem;
+    }
+    /* .ListSection{
+        font-size: 1rem;
+        list-style-type: none;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    } */
+    /* #Home ol {
+        margin-left: 2.5rem;
+    }
+    #Home div{
+        margin-right: 2rem;
+    } */
+    /* .Section{
+        flex-wrap: nowrap;
+    } */
+    /* .ListSectionB{
+        font-size: 2rem;
+        list-style-type: none;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    .ListSectionC span:nth-child(1){
+        font-size: 1rem;
+        margin-right:0.5rem;
+    }
+    .ListSectionC span:nth-child(2){
+        font-size: 0.7rem;
+        color: red;
+    } */
+    /* .photo{
+        width:13rem;
+        height:13rem;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-right: 7rem;
+    } */
+     /* .aboutbtn{
+        list-style-type: none;
+        background-color: red;
+        font-size: 0.3rem;
+        width:9.9rem;
+        height: 1.8rem;
+        border-radius: 2rem;
+        padding-top:0.1rem;
+    }*/ 
+    #About h1{
+        margin-bottom: 1rem;
+    }
+    #About ol li{
+        list-style-type: disc;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    #About ol img{
+        width: 15rem;
+        height:15rem;
+    } 
+}
+@media (max-width:431px){
+    .grid{
+        display: grid;
+        grid-template-columns: 13rem 13rem;
+        grid-template-rows: 13rem 13rem 13rem 13rem 13rem;
+        justify-content:space-around;
+    }
+    .grid div{
+        font-size: 1.5rem;
+        border: 2px solid black;
+        margin-bottom: 5rem;
+        text-align: center;
+        border-radius: 2rem;
+        height:12rem;
+        background-color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    .grid div img{
+        width:7rem;
+        height:5rem;
+        display: block;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+    #Education .flexbox div{
+        width: 25rem;
+        height:25.8rem;
+        margin-bottom: 2rem;
+        background-color: white;
+    }
+    #Education .flexbox div:nth-child(1) img{
+        width:25rem
+     }
+     #Education .flexbox div:nth-child(2) img{
+        width:25rem
+     }
+    #Education .flexbox div:nth-child(3) img{
+        width:25rem
+     }
+    #Education ol li:nth-child(1){
+        font-size: 1.7rem;
+        position: relative;
+        right: 14rem;
+    }
+    #Education ol li:nth-child(2){
+        font-size: 1rem;
+        position: relative;
+        right:21rem;
+
+    }
+    #Education ol li:nth-child(3){
+        font-size: 1rem;
+       text-align: center;
+       width:9rem;
+    }
+    #Education ol{
+        margin-top: 1rem;
+    }
+     /* .ListSection{
+        font-size: 1rem;
+        list-style-type: none;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .ListSectionB{
+        font-size: 1.5rem;
+        list-style-type: none;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    .ListSectionC span:nth-child(1){
+        font-size: 1rem;
+        margin-right:0.5rem;
+    }
+    .ListSectionC span:nth-child(2){
+        font-size: 0.7rem;
+        color: red;
+    }
+    .photo{
+        width:10rem;
+        height:10rem;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-right: 7rem;
+    } */
+    /* .aboutbtn{
+        list-style-type: none;
+        background-color: red;
+        font-size: 0.1rem;
+        width:9.9rem;
+        height: 1.6rem;
+        border-radius: 2rem;
+        padding-top:0rem;
+    } */
+    #About ol li{
+        list-style-type: disc;
+        margin-left: 3rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    #About ol img{
+
+        width: 13rem;
+        height:13rem;
+    } 
+}
+@media (max-width:406px){
+    #footer h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width:361px){
+    #Contact{
+        position: relative;
+        top:72.8rem;
+        background-color:rgb(230, 230, 250);
+        padding-top: 3rem;
+    }
+    #Contact h1{
+        text-align: center;
+        font-weight: bolder;
+        font-size:3rem;
+        margin-bottom: 5rem;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    #Contact .flexbox{
+        background-color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        width:28rem;
+    }
+    #Contact .flexbox{
+        display: grid;
+        grid-template-columns:  auto;
+        grid-template-rows:auto;
+    }
+    #Contact .flexbox div input{
+       width: 22rem;
+       height: 2.5rem;
+       font-size: 1rem;
+    }
+    input:hover{
+        border: 2px solid blue;
+        cursor: pointer;
+    }
+    textarea:hover{
+       cursor: pointer;
+    }
+    #Contact .flexbox input,textarea{
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        border-color: black;
+    }
+    #Contact .flexbox input::placeholder,textarea::placeholder{
+        color: black;
+        font-size: 1rem;
+    }
+    .First{
+        position: relative;
+        left: 1.5rem;
+        bottom:0.1rem;
+    }
+    .Second{
+        position: relative;
+        left: 1.5rem;
+        bottom:0.1rem;
+    }
+    .Third{
+        position: relative;
+        left: 1.5rem;
+        bottom:0.1rem;
+    }
+    .Fourth{
+        position: relative;
+        left: 1.5rem;
+        bottom:16.2rem;
+    }
+    #Contact .flexbox input[type='reset']{
+        margin-left: 15rem;
+        width:7rem;
+        font-size: 1rem;
+        background-color: darkmagenta;
+        color: white;
+    }
+    .Fifth{
+        position: relative;
+        left: 17rem;
+    }
+    input{
+      padding-left: 1.6rem;
+      background-color: rgb(230, 230, 250);
+      border: 2px solid black;
+    }
+    #Contact textarea{
+        padding-left: 1.6rem;
+        margin-right: 0rem;
+        background-color: rgb(230, 230, 250);
+        width: 21.7rem;
+    }
+}
+@media (max-width:321px){
+    /* .ListSection{
+        font-size: rem;
+        list-style-type: none;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .ListSectionB{
+        font-size: 0.5rem;
+        list-style-type: none;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
+    .ListSectionC span:nth-child(1){
+        font-size: 0.4rem;
+        margin-right:0.5rem;
+    }
+    .ListSectionC span:nth-child(2){
+        font-size: 0.7rem;
+        color: red;
+    }
+    .photo{
+        width:10rem;
+        height:10rem;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-right: 7rem;
+    }
+    .aboutbtn{
+        list-style-type: none;
+        background-color: red;
+        font-size: 0.1rem;
+        width:9.9rem;
+        height: 1.6rem;
+        border-radius: 2rem;
+        padding-top:0rem;
+    } */
+    #About ol li{
+        list-style-type: disc;
+        margin-left: 3rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    #About ol img{
+        width: 12rem;
+        height:12rem;
+    }
+}
+@media (max-width:556px){
+    .Section{
+        flex-direction:column;
+        justify-content:center;
+    }
+    .Section ol{
+        margin-bottom: 3rem;
+    }
+    .photo{
+        margin-top: 2rem;
+        margin-left: 0;
+        position:relative;
+        right: 10rem;
+    }
+    #Home ol{
+        margin-left: 0;
+        position: relative;
+        right: 5.6rem;
+        width:30rem
+    }
+}
+@media (max-width:451px){
+    .photo{
+        position: relative;
+        left:0rem
+    }
+    #Home ol{
+        position: relative;
+        left: 3rem;
+    }
+}
+@media (max-width:645px){
+    #About{
+        font-size:2rem;
+        position: relative;
+        top: 73rem;
+        background-color: #F5FFFA;
+    }
+}
+@media (max-width:1182px){
+    .List{
+        list-style-type: none;
+        margin-top: 0.5rem;
+        margin-right: 2rem;
+        position: relative;
+    }   
+}
+@media (max-width:1065px){
+    .List{
+        list-style-type: none;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+        position: relative;
+    }   
+}
+@media (max-width:953px){
+    .List{
+        list-style-type: none;
+        margin-top: 0.5rem;
+        margin-right:0rem;
+        position: relative;
+    }   
+}
+.slide{
+    display: none;
+}
+.Lt{
+    color:white;
+    font-size: 3rem;
+    list-style-type: none;
+    margin-right:4rem;
+}
+.Lt{display: none;}
+.Lt1{
+    color:white;
+    font-size: 3rem;
+    list-style-type: none;
+    margin-right:4rem;
+}
+.Lt1{
+    display: none;
+}
+#chk1{
+    display: none;
+}
+@media (max-width:882px){
+    .Listnavbar li:nth-child(1),.Listnavbar li:nth-child(2),.Listnavbar li:nth-child(3),.Listnavbar li:nth-child(4),.Listnavbar li:nth-child(5){
+        display:none;
+    }
+    .Lt{
+        display: block;
+    }
+    .Lt1{
+        display: block;
+        margin-left: 95%;
+    }
+    .slide{
+        position: fixed;
+        width:80vw;
+        height: 100vh;
+        background-color:deepskyblue;
+        top:0;
+        right:0;
+        display: block;
+        transform: translateX(80vw);
+        transition: transform 0.3s linear;
+    }
+    #chk1:checked ~ .slide{
+        transform:translateX(0vw);
+    }
+    .Listnavbar{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items:center;
+        }
+        .List{
+            list-style-type: none;
+            margin-top: 5rem;
+            margin-left:1rem;
+            position: relative;
+            color: white;
+        }
+        .List::after{
+            content:" ";
+            background-color:white;
+            position: absolute;
+            width:0%;
+            height: 0.2rem;
+            left:2rem;
+            top:1.7rem;
+        }
+        .List:hover::after{
+            transition: width 0.1s linear;
+            width:80%;
+        }
+    }
+    @media (max-width:565px){
+        .Lt1{
+            margin-left: 93%;
+        }
+    }
+    @media (max-width:409px){
+        .Lt1{
+            margin-left: 90%;
+        }
+    }
+    @media (max-width:311px){
+        .Lt1{
+            margin-left: 87%;
+        }
+    }
+    @media (max-width:270px){
+        .Lt1{
+            margin-left: 83%;
+        }
+    }
+    @media (max-width:297px){
+        #Contact .flexbox{
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            width:25rem;
+        }
+        .Fourth{
+            position: relative;
+            top:1.5rem;
+            left:1.5rem;
+            bottom:34rem;
+            height: 54px;
+            z-index: 1;
+        }
+        #Contact .flexbox div input{
+            width: 18rem;
+            height: 2.5rem;
+            font-size: 1rem;
+         }
+         #Contact .flexbox input[type='reset']{
+            margin-left: 11rem;
+            width:7rem;
+            font-size: 1rem;
+            background-color: darkmagenta;
+            color: white;
+        }
+        .Fifth{
+            position: relative;
+            left: 13rem;
+        }
+        .flexbox textarea{
+           position: relative;
+           left:1rem;
+        }
+    }
+    @media (max-width:1090px){
+        .photo img{
+            height: 50rem;
+            width:50rem
+        }
+        .photo{
+            width:15rem;
+            height:15rem;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-right: 13rem;
+        }
+    }
+    @media (max-width:919px){
+        .photo img{
+            height: 40rem;
+            width:40rem
+        }
+        .photo{
+            width:15rem;
+            height:15rem;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-right: 10rem;
+        }
+    }
+    @media (max-width:669px){
+        .photo img{
+            height: 30rem;
+            width:30rem
+        }
+        .photo{
+            width:15rem;
+            height:15rem;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-right: 4.5rem;
+        }
+    }
+    @media (max-width:1199px){
+        textarea{
+            width: 28rem;
+        }
+    }
+    @media (max-width:409px){
+        .portifolio{
+            margin-left: 3rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color:white;
+        }
+    }
+
+    @media (max-width:324px){
+        .portifolio{
+            margin-left: 3rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color:white;
+        }
+    }
+    @media (max-width:300px){
+        .portifolio{
+            margin-left: 1rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color:white;
+        }
+    }
+
+
+
