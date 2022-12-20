@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Priyanshureactportfolio/static/css/main.a532fa61.css",
+    "main.js": "/Priyanshureactportfolio/static/js/main.5959b53b.js",
+    "index.html": "/Priyanshureactportfolio/index.html",
+    "main.a532fa61.css.map": "/Priyanshureactportfolio/static/css/main.a532fa61.css.map",
+    "main.5959b53b.js.map": "/Priyanshureactportfolio/static/js/main.5959b53b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a532fa61.css",
+    "static/js/main.5959b53b.js"
+  ]
+}
