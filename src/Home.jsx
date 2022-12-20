@@ -95,7 +95,7 @@ const Home=()=>{
                 <ol>
                 <li>Class-12 Certificate</li>
                 <li>Joseph And Mary Public School,New Delhi | CBSE</li>
-                <li>2016-2018 | Completed</li>
+                <li>2018-2020 | Completed</li>
                 </ol>
                 </div>
                 <div data-aos="flip-down"><img src="./MDU.png" alt="failed"/>
